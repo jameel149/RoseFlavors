@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ROSE FLAVORS COMPANY |Home</title>
+	<link rel="icon" href="photos/english logo.png" type="image/x-icon"/>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet"> 
+	<script src="https://kit.fontawesome.com/ec2f8d7afa.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/ec2f8d7afa.js" crossorigin="anonymous"></script>
+	<script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+	<script>
+		function loadGoogleTranslate()
+		{
+			new google.translate.TranslateElement("google_element")
+		}
+	</script>
+</head>
+<body>
+	<div class="somo">
+	<div class="navbar">
+		<div class="logo">
+			<img src="photos/englesh_logo-removebg-preview.png" width="125px">
+		</div>
+		<nav>
+			<ul id="MenuItems">
+				<li><a href="index-en.html">Home</a></li>
+				<li><a href="products-en.html">Products</a></li>
+				<li><a href="offers.html">Offers</a></li>
+				<li><a href="contact-en.html">Contact</a></li>
+				<li><a href="account.html">Account</a></li>
+			</ul>
+		</nav>
+		<img src ="photos/Menu.svg" class="menu-icon" onclick="menutoggle()">
+	</div>
+</div>
+<!-----contact------>
+<section>
+	<div class="containe">
+		   <form action="https://formspree.io/f/xgebvpwj" method="POST" id="my-form">
+			<h3>GET OFFER</h3>
+		   <div class=" form-group">
+		   <label for="firstName"> copmany Name</label>
+		   <input type="text" id="companyname" name="company name">
+		   </div>
+               <div class="form-group">
+		   <label for="1atsName">your name</label>
+		   <input type="text" id="name" name="name">
+		   </div>
+		   <div class="form-group">
+		   <label for="1atsName">your adress</label>
+		   <input type="text" id="adress" name="adress">
+		   </div>
+
+		   <div class="form-group">
+		   <label for="emai1"> Contact Email </label>
+		   <input type="email" id="email" name="email">
+		   </div>
+
+		   <div class="form-group">
+		   <label for="massage">Your Request</label>
+		   <textarea name="massage" id="massage" cols="30" rows="6"></textarea>
+		   </div>
+		   
+		   <button type="submit">Submit</button>
+		   <div id="status"></div>
+		  </form>
+	</div>
+   </section>
+
+<!-- Place this script at the end of the body tag -->
+<script>
+var form = document.getElementById("my-form");
+
+async function handleSubmit(event) {
+  event.preventDefault();
+  var status = document.getElementById("status");
+  var data = new FormData(event.target);
+  fetch(event.target.action, {
+	method: form.method,
+	body: data,
+	headers: {
+		'Accept': 'application/json'
+	}
+  }).then(response => {
+	if (response.ok) {
+	  status.innerHTML = "Thanks for your submission!";
+	  form.reset()
+	} else {
+	  response.json().then(data => {
+		if (Object.hasOwn(data, 'errors')) {
+		  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+		} else {
+		  status.innerHTML = "Oops! There was a problem submitting your form"
+		}
+	  })
+	}
+  }).catch(error => {
+	status.innerHTML = "Oops! There was a problem submitting your form"
+  });
+}
+form.addEventListener("submit", handleSubmit)
+</script>
+<!-----footer-------->
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-2">
+				<img src="photos/englesh_logo-removebg-preview.png">
+				<p>our goal it to provid the best and the most natural taste in the flavors world </p>
+			</div>
+			<div class="footer-col-3">
+				<h3> Useful links</h3>
+				<ul>
+					<li><a href="">our location</a></li>
+				</ul>
+			</div>
+			<div class="footer-col-4">
+				<h3>Follow us</h3>
+				<ul>
+					<li> <a href=""> Facebook </a></li>
+					<li> <a href="">Instagram</a></li>
+					<li><a href="">Tiktiok</a></li>
+					<li><a href="">Telegram</a></li>
+				</ul>
+			</div>
+		</div>
+		<a class="ar" href="index-ar.html">AR</a><a>/</a> <a class="en" href="index-en.html" style="color: #FFBB64;">EN</a>
+		<hr>
+		<p class="copyright">Copyright 2025 - ROSE FLAVORS COMPANY</p>
+	</div>
+</div>
+<!----------js for toggle menu-------->
+	<script>
+		var MenuItems = document.getElementById("MenuItems");
+		
+		MenuItems.style.maxHeight = "0px";
+		function menutoggle(){
+			
+			if(MenuItems.style.maxHeight == "0px")
+			{
+				MenuItems.style.maxHeight = "200px";
+			}
+			else
+			{
+				MenuItems.style.maxHeight = "0px";
+			}
+		}
+	</script>
+</body>
+</html>

@@ -63,6 +63,7 @@ c{
 	margin:  auto;
 	padding-left: 25px;
 	padding-right: 23px;
+	
 }
 .row{
 	display: flex;
@@ -95,7 +96,7 @@ min-width: 300px;
 
 .btn{
 	display: inline-block;
-	background: rgb(0, 0, 0);
+	background: black;
 	color:rgb(255, 255, 255);
 	padding: 8px 30px;
 	margin: 30px 0;
@@ -291,7 +292,7 @@ ul{
 		position: absolute;
 		top: 70px;
 		left: 0px;
-		background: #FFBB64;
+		background: #E8E6D5;
 		width: 100%;
 		overflow:hidden;
 		margin-top: 20px;
@@ -341,6 +342,17 @@ ul{
 	.navbar li a.active::after, .navbar li a:hover::after{
 		display: none;
 	}
+	.containe form h3::after{
+		    content:'';
+	background: black;
+	width: 90px;
+	height: 5px;
+	border-radius: 	5px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 50px;
+	}
 }
 /*-----------all products page--------*/
 .row-2{
@@ -348,7 +360,7 @@ ul{
 	margin: 100px auto 50px;
 }
 select{
-	border: 1px solid green;
+	border: 1px solid black;
 	padding: 5px;
 }
 select:focus{
@@ -359,7 +371,7 @@ select:focus{
 }
 .page-btn span{
 	display: inline-block;
-	border: 1px solid green;
+	border: 1px solid black;
 	margin-left: 10px;
 	width: 40px;
 	height: 40px;
@@ -368,7 +380,7 @@ select:focus{
 	cursor: pointer;
 }
 .page-btn span:hover{
-	background: green;
+	background: black;
 	color: #fff;
 }
 /*--------single product details------------*/
@@ -403,7 +415,7 @@ input:focus{
 	outline: none;
 }
 .single-product .fa-solid{
-	color: green;
+	color: black;
 	margin-left: 10px;
 }
 /*------cart items------*/
@@ -422,7 +434,7 @@ th{
 	text-align: left;
 	padding: 5px;
 	color: #fff;
-	background: #14bf1a;
+	background: #FFBB64;
 	font-weight: normal;
 }
 td{
@@ -447,7 +459,7 @@ td img{
 	justify-content: flex-end;
 }
 .total-price table{
-	border-top: 3px solid #14bf1a;
+	border-top: 3px solid #FFBB64;
 	width: 100%;
 	max-width: 350px;
 }
@@ -466,8 +478,7 @@ section{
 	height: 100%;
 	width: 100%;
 	display: flex;
-	background: url(photos/favpng_aloe-vera-herbalism-skin-gel-acne.png);
-	background-color: #D1ffd2;
+	background-color: #d2d0bd;
 	align-items: center;
 	justify-content: center;
 }
@@ -477,7 +488,7 @@ section{
 	margin: 0 auto;
 	padding: 20px;
 	box-shadow: 0px 0px 20px rgb(255, 236, 236);
-	background-color: white;
+	background-color: #fff;
 	border-radius: 8px;
 	margin-top: 100px;
 	margin-bottom: 100px;
@@ -499,34 +510,36 @@ margin-top: 5px;
 	color: black;
 	font-weight: 800;
 	margin-bottom: 20px;
-	display: flex;
 	justify-content: center;
+	display: flex;
 }
 .containe form h3::after{
     content:'';
-	background: green;
+	background: black;
 	width: 90px;
 	height: 5px;
-	border-radius: 5px;
+	border-radius: 	5px;
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
 	margin-top: 25px;
+	display: flex;
 }
 .containe form button{
 	padding : 15px;
-	background: #14bf1a;
+	background: black;
 	color: #f5f5f5;
 	font-size: 18px;
 	border: 0;
-	outline: none;
+	outline: non;
 	cursor: pointer;
-	width:150px;
+	width:90px;
 	margin: 20px auto 0;
-	border-radius: 30px;
+	border-radius: 20px;
+	display: flex;
 }
 .containe form button:hover{
-	background: green;
+	background: #FFBB64;
 }
 #status{
 	width: 90%;
@@ -535,7 +548,7 @@ margin-top: 5px;
 	padding: 10px;
 	margin: 0 auto;
 	border-radius: 8px;
-	color: #14bf1a;
+	color: black;
 }
 /*----------account-page---------*/
 .account-page{
