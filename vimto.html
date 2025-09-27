@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ROSE FLAVORS COMPANY |Home</title>
+	<link rel="icon" href="photos/english logo.png" type="image/x-icon"/>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet"> 
+	<script src="https://kit.fontawesome.com/ec2f8d7afa.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/ec2f8d7afa.js" crossorigin="anonymous"></script>
+	<script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+	<script>
+		function loadGoogleTranslate()
+		{
+			new google.translate.TranslateElement("google_element")
+		}
+	</script>
+</head>
+<body>
+	<div class="somo">
+	<div class="navbar">
+		<div class="logo">
+			<img src="photos/englesh_logo-removebg-preview.png" width="125px">
+		</div>
+		<nav>
+			<ul id="MenuItems">
+				<li><a href="index-en.html">Home</a></li>
+				<li><a href="products-en.html">Products</a></li>
+				<li><a href="offers.html">Offers</a></li>
+				<li><a href="contact-en.html">Contact</a></li>
+				<li><a href="account.html">Account</a></li>
+			</ul>
+		</nav>
+		<img src ="photos/Menu.svg" class="menu-icon" onclick="menutoggle()">
+	</div>
+</div>
+	<!-----------single products details--------->
+	<div class="small-container single-product">
+		<div class="row">
+			<div class="col-2">
+				<img src="photos/vimto.jpeg" width="100%">
+			</div>
+			<div class="col-2">
+				<h1>vimto flavor</h1>
+				<p></p>
+				
+				<h3>Product Details<i class="fa-solid fa-indent"></i></h3>
+				<br>
+				Our company currently produces 1,600 varieties of spices, fragrances, food, and medicinal flavors. This ensures a wide variety and high quality of our products. Specializing in essential oils, we also continue to produce a full range of fragrances for cleaning products and air fresheners.
+
+With years of experience in the aroma sector, ROSE FLAVORS serves its customers with the widest range of products, including both liquid and powder options.
+
+Our products are produced using the purest, natural ingredients.
+
+They are packaged using superior quality raw materials.
+our flavors  will provide your products with a wonderful scent and aroma.
+Our products are packaged in recyclable, BPA-free plastic containers.
+Depending on your product, you can choose water-based or oil-based flavors.
+			</div>
+            <a href="contact-en.html" class="btn">request offer</a>
+		</div>
+	</div>
+<!----------title--------->
+	<div class="small-container">
+		<div class="row row-2">
+			<h2>Other Products</h2>
+			<p>View More</p>
+		</div>
+	</div>
+<!------products-------->
+	<div class="small-container">
+		<div class="row">
+			<div class="col-4" onclick=
+				 "window.location.href='orange.html';">
+				<img src="photos/orange.jpeg">
+				<h4>orange flavor</h4>
+				<div class="rating">
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-regular fa-star"></i>
+				</div>
+			</div>
+			<div class="col-4" onclick=
+				 "window.location.href='lemon.html';">
+				<img src="photos/lemon.jpeg">
+				<h4>lemon flavor</h4>
+				<div class="rating">
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-regular fa-star"></i>
+                </div>
+			</div>
+
+			<div class="col-4" onclick=
+				 "window.location.href='strawberry.html';">
+				<img src="photos/strawberry-2.png">
+				<h4>strawberry flavor</h4>
+				<div class="rating">
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-regular fa-star"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-----footer-------->
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-2">
+				<img src="photos/englesh_logo-removebg-preview.png">
+				<p>our goal it to provid the best and the most natural taste in the flavors world </p>
+			</div>
+			<div class="footer-col-3">
+				<h3> Useful links</h3>
+				<ul>
+					<li><a href="">our location</a></li>
+				</ul>
+			</div>
+			<div class="footer-col-4">
+				<h3>Follow us</h3>
+				<ul>
+					<li> <a href=""> Facebook </a></li>
+					<li> <a href="">Instagram</a></li>
+					<li><a href="">Tiktiok</a></li>
+					<li><a href="">Telegram</a></li>
+				</ul>
+			</div>
+		</div>
+		<a class="ar" href="index-ar.html">AR</a><a>/</a> <a class="en" href="index-en.html" style="color: #FFBB64;">EN</a>
+		<hr>
+		<p class="copyright">Copyright 2025 - ROSE FLAVORS COMPANY</p>
+	</div>
+</div>
+<!----------js for toggle menu-------->
+	<script>
+		var MenuItems = document.getElementById("MenuItems");
+		
+		MenuItems.style.maxHeight = "0px";
+		function menutoggle(){
+			
+			if(MenuItems.style.maxHeight == "0px")
+			{
+				MenuItems.style.maxHeight = "200px";
+			}
+			else
+			{
+				MenuItems.style.maxHeight = "0px";
+			}
+		}
+	</script>
+</body>
+</html>
+
+
